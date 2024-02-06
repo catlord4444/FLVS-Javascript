@@ -2,7 +2,7 @@
 function setup() {
   createCanvas(400, 400);
 }
-
+ 
 function ears(x, y, width, height) {
     ellipse(x, y, width, height);
 }
