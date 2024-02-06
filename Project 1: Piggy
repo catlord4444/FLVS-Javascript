@@ -1,0 +1,38 @@
+// P5.js Sketch Project
+function setup() {
+  createCanvas(400, 400);
+}
+
+function ears(x, y, width, height) {
+    ellipse(x, y, width, height);
+}
+
+function eyes(x, y, d) {
+    fill(255);
+    circle(x, y, d);
+    fill(0);
+    circle(x, y, d-(d*.40));
+}
+
+function draw() {
+   background(173, 216, 230);
+    textSize(27);
+    textFont('Didot');
+    fill(0, 0, 230);
+    text('mom the pig is the best mom pig ', 0, 50);
+    fill(100, 150, 230);
+    strokeWeight(1);
+ ears(165, 150, 25, 50);
+    ears(235, 150, 25, 50);
+    circle(200, 200, 125)
+ eyes(175, 170, 25);
+    eyes(225, 170, 25);
+ fill(100, 150, 230);
+    ellipse(200, 210, 50, 25);
+    fill(0);
+    circle(190, 210, 10);
+    circle(210, 210, 10);
+ noFill();
+    arc(200, 225, 50, 50, PI * .25, PI * .75);
+}
+        
